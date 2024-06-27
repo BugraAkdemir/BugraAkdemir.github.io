@@ -1,0 +1,34 @@
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+
+body, h2{
+    font-family: "Raleway", Arial, sans-serif
+}
+
+.w3-half, h1{
+    text-align: center;
+}
+
+.icon {
+    font-size: 24px; /* İkon boyutu */
+    margin-right: 10px; /* Sağa boşluk */
+    cursor: pointer; /* Tıklanabilir imleç */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* İçeriği yatayda ortalar */
+    align-items: center; /* İçeriği dikeyde ortalar */
+    height: 100vh; /* Ekran yüksekliği kadar genişlik */
+    background-color: #f0f0f0; /* Arka plan rengi */
+  }
+
+  .content {
+    max-width: 600px; /* İçeriğin maksimum genişliği */
+    padding: 20px; /* İçerik kenar boşluğu */
+    text-align: center; /* Metni ortala */
+    background-color: #ffffff; /* İçerik arka plan rengi */
+    border-radius: 10px; /* Köşe yuvarlama */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+  }
