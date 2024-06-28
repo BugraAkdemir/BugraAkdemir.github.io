@@ -24,11 +24,4 @@ body, h2{
     background-color: #f0f0f0; /* Arka plan rengi */
   }
 
-  .content {
-    max-width: 600px; /* İçeriğin maksimum genişliği */
-    padding: 20px; /* İçerik kenar boşluğu */
-    text-align: center; /* Metni ortala */
-    background-color: #ffffff; /* İçerik arka plan rengi */
-    border-radius: 10px; /* Köşe yuvarlama */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölge efekti */
-  }
+  
