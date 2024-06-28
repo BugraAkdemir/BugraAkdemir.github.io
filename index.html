@@ -46,11 +46,32 @@
     margin-right: 20px; /* Sosyal medya ikonları arasındaki boşluk */
   }
 
-
+:root {
+  
+  --bg-color: #f9f9f9;
+  --card-bg-color: #efeeee;
+  --color-primary: #4a4a4a;
+  --color-secondary: #505050;
+  
+  &[data-theme="dark"] {
+    --bg-color: #383838;
+    --card-bg-color: #2d2d2d;
+    --color-primary: #f5ecec;
+    --color-secondary: #bfbfbf;
+  }
+  
+}
 </style>
 
 </head>
 <body>
+
+  <div class="theme-select">
+    <form onchange="changeTheme()">
+      <input type="checkbox" name="theme" id="theme">
+      <label for="theme">Dark Theme Active</label>
+    </form>
+  </div>
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-content">
@@ -101,5 +122,11 @@
 
 </div>
 
+<script src="javascript/index.js">
+  function changeTheme() {
+  let themeVal = document.querySelector('input[name="theme"]').checked ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', themeVal);
+}
+</script>
 </body>
 </html>

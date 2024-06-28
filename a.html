@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap&subset=latin-ext');
+
+
+:root {
+  height: 100%;
+  display:flex;
+  
+  --bg-color: #f9f9f9;
+  --card-bg-color: #efeeee;
+  --color-primary: #4a4a4a;
+  --color-secondary: #505050;
+  
+  &[data-theme="dark"] {
+    --bg-color: #383838;
+    --card-bg-color: #2d2d2d;
+    --color-primary: #f5ecec;
+    --color-secondary: #bfbfbf;
+  }
+  
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg-color);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.theme-select {
+  margin: 0 0 30px 0;
+  width: 80%;
+  label {
+    color: var(--color-primary);
+  }
+}
+
+
+.card-container {
+  width: 80%;
+  background-color: var(--card-bg-color);
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+  .card-title {
+    font-weight: 500;
+    color: var(--color-primary);
+  }
+  .card-description {
+    color: var(--color-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+}
+.author {
+  margin-top: 40px;
+  a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 100;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="theme-select">
+        <form onchange="changeTheme()">
+          <input type="checkbox" name="theme" id="theme">
+          <label for="theme">Dark Theme Active</label>
+        </form>
+      </div>
+      <div class="card-container">
+        <h2 class="card-title">Example of light and dark theme with css</h2>
+        <p class="card-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam blandit orci mollis lorem venenatis, quis malesuada lacus vehicula. Mauris at nulla quis tellus gravida pulvinar. Morbi sem nulla, lacinia vel mauris vel, dictum pellentesque purus.
+      <br><br>
+      Duis luctus tortor ut hendrerit suscipit. Aliquam sodales libero sit amet velit ornare fermentum. Donec aliquam elit vel libero sagittis fermentum. Donec lobortis sem lacus, non sodales dolor finibus nec. Mauris facilisis id mi lacinia interdum. In nec eros tellus.
+        </p>
+      </div>
+      <div class="author">
+        <a href="https://kodumunblogu.net/auth/mehmet-sert-11" target="_blank" title="Kodumunblogu.net">Kodumunblogu.net - Mehmet Sert</a>
+      </div>
+
+      <script>
+            function changeTheme() {
+  let themeVal = document.querySelector('input[name="theme"]').checked ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', themeVal);
+}
+      </script>
+</body>
+</html>
