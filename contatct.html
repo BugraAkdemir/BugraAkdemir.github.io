@@ -1,68 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bugra Akdemir - Contatct</title>
-  <link rel="stylesheet" href="css/contatct.css">
-  <link rel="icon" href="image/logo/mainLogo.png">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+</style>
 </head>
 <body>
-  <nav>
-    <div class="logo">
-      <h2>Bugra Akdemir</h2>
-      <p>Contact</p>
-    </div>
-    <div class="nav-items">
-      <ul class="overview">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Rates</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="account">
-        <li><a href="#">Notifications</a></li>
-        <li><a href="#">Settings</a></li>
-      </ul>
-    </div>
-  </nav>
-  <div class="hero-section"></div>
 
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="/projects">Projects</a></li>
+  <li><a href="/about-us">About Us</a></li>
+  <li><a href="/notifications">Notifications</a></li>
+  <li style="float:right"><a class="active" href="/contatct">Contatct</a></li>
+</ul>
 
-<!-- --------------------------------Buttonlar ------------------------->
-
-  <div class="button-container">
-
-    <div class="glass-btn blue-btn">
-      <!--<div class="content">
-        h
-      </div> -->
-      <a href="https://www.github.com/BugraAkdemir">
-        <img src="image/logo/github-logo.png" alt="github-logo" style="width: 5.5em;">
-      </a>
-      
-    </div>
-  
-    <div class="glass-btn red-btn">
-      <!-- <div class="content">
-        e
-      </div> -->
-      <a href="https://www.instagram.com/s1r.bugra/">
-        <img src="image/logo/instagram-logo.png" alt="instagram-logo" style="width: 6em;">
-      </a>
-      
-    </div>
-  
-    <div class="glass-btn amber-btn">
-      <!-- <div class="content">
-        y
-      </div> -->
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7Ijvjv_VjWG1kFR3U00hG_Dk37THG5tI6OyQtwQclA6iDNw/viewform?usp=sf_link">
-        <img src="image/logo/google-forms-logo.png" alt="google-forms" style="width: 6em;">
-      </a>
-      
-    </div>
-  
-  </div>
 </body>
 </html>
+
+
