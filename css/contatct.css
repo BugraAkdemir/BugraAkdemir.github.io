@@ -1,161 +1,107 @@
-html,
-body {
-  background-color: #F2F7FD;
-  transition: all 0.3s;
-  height: 100%;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-
-* {
+ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
+  overflow: hidden;
+  background-color: #333;
 }
 
-.button-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+li {
+  float: left;
 }
 
-.glass-btn {
-  width: 100px;
-  height: 100px;
-  background-color: #fafafa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 7px;
-  margin-left: 1em;
-  margin-right: 1em;  
-  cursor: pointer;
-  transition: all 0.3s;
-
-  &.blue-btn {
-    -webkit-box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
-    -moz-box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
-    box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
-
-    &:hover {
-      -webkit-box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
-      -moz-box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
-      box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);      
-    }
-
-    .content {
-      font-size: 4em;
-      font-family: "Roboto", sans-serif;
-      background: linear-gradient(to right, #006fff, #00acff 70%);
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0px 10px 37px rgba(0, 111, 255, 0.8);
-    }
-  }
-
-  &.red-btn {
-    -webkit-box-shadow: 0px 20px 20px -17px rgba(255, 16, 39, 0.5);
-    -moz-box-shadow: 0px 20px 20px -17px rgba(255, 16, 39, 0.5);
-    box-shadow: 0px 20px 20px -17px rgba(255, 16, 39, 0.5);
-
-    &:hover {
-      -webkit-box-shadow: 0px 20px 35px -16px rgba(255, 16, 39, 0.57);
-      -moz-box-shadow: 0px 20px 35px -16px rgba(255, 16, 39, 0.57);
-      box-shadow: 0px 20px 35px -16px rgba(255, 16, 39, 0.57);      
-    }
-
-    .content {
-      font-size: 4em;
-      font-family: "Roboto", sans-serif;
-      background: linear-gradient(to right, #ff1027, #ff4f06 70%);
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0px 10px 37px rgba(255, 16, 39, 0.6);
-    }
-  }
-
-  &.amber-btn {
-    -webkit-box-shadow: 0px 20px 20px -17px rgba(255, 159, 16, 0.53);
-    -moz-box-shadow: 0px 20px 20px -17px rgba(255, 159, 16, 0.53);
-    box-shadow: 0px 20px 20px -17px rgba(255, 159, 16, 0.53);
-
-    &:hover {
-      -webkit-box-shadow: 0px 20px 35px -16px rgba(255, 159, 16, 0.6);
-      -moz-box-shadow: 0px 20px 35px -16px rgba(255, 159, 16, 0.6);
-      box-shadow: 0px 20px 35px -16px rgba(255, 159, 16, 0.6);      
-    }
-
-    .content {
-      font-size: 4em;
-      font-family: "Roboto", sans-serif;
-      background: linear-gradient(to right, #ff8d00, #f7ad07 70%);
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0px 10px 37px rgba(255, 94, 16, 0.7);
-    }
-  }
-
-  &:hover {
-    background-color: darken(#fafafa, 2%);    
-    transform: translateY(-5px);
-    transition: all 0.3s;
-  }
-}
-
-
-/* Hero section */
-.hero-section {
-  height: 100vh;
-  background: url("hero-bg.jpg") center no-repeat;
-  background-size: cover;
-}
-/* Nav */
-nav {
-  height: 70px;
-  background: rgb(20, 20, 20);
-  color: rgb(220, 220, 220);
-  padding: 0 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-}
-
-.nav-items,
-.overview,
-.account {
-  display: flex;
-}
-.overview {
-  margin-right: 4rem;
-}
-
-.logo h2 {
-  text-decoration: overline;
-  font-style: italic;
-  color: rgb(0, 206, 206);
-  cursor: pointer;
-  margin: 0 0.5rem;
-}
-nav li {
-  list-style: none;
-  margin: 0 0.5rem;
-}
-nav a {
-  text-decoration: none;
-  color: rgb(220, 220, 220);
-}
-nav a:hover {
-  color: #a0ebfd;
-}
-nav a::after {
-  content: "";
+li a {
   display: block;
-  height: 3px;
-  background: #a0ebfd;
-  width: 0%;
-  transition: all ease-in-out 300ms;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-nav a:hover::after {
-  width: 100%;
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+/* Styles.css */
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans"); 
+
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+	outline: none; 
+	font-family: "Josefin Sans", 
+		sans-serif; 
+} 
+
+body { 
+	background: #5eb558; 
+} 
+
+.wrapper { 
+	position: absolute; 
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%); 
+	max-width: 350px; 
+	width: 100%; 
+	background: #fff; 
+	padding: 25px; 
+	border-radius: 5px; 
+	box-shadow: 4px 4px 2px
+		rgba(254, 236, 164, 1); 
+} 
+
+.wrapper h2 { 
+	text-align: center; 
+	margin-bottom: 20px; 
+	text-transform: uppercase; 
+	letter-spacing: 3px; 
+	color: #332902; 
+} 
+
+.wrapper .input_field { 
+	margin-bottom: 10px; 
+} 
+
+.wrapper 
+	.input_field 
+	input[type="text"], 
+.wrapper textarea { 
+	border: 1px solid #e0e0e0; 
+	width: 100%; 
+	padding: 10px; 
+} 
+
+.wrapper textarea { 
+	resize: none; 
+	height: 80px; 
+} 
+
+.wrapper .btn input[type="submit"] { 
+	border: 0px; 
+	margin-top: 15px; 
+	padding: 10px; 
+	text-align: center; 
+	width: 100%; 
+	background: #569a4d; 
+	color: #fcfbf7; 
+	text-transform: uppercase; 
+	letter-spacing: 5px; 
+	font-weight: bold; 
+	border-radius: 25px; 
+	cursor: pointer; 
+} 
+
+#error_message { 
+	margin-bottom: 20px; 
+	background: #fe8b8e; 
+	padding: 0px; 
+	text-align: center; 
+	font-size: 14px; 
+	transition: all 0.5s ease; 
 }
