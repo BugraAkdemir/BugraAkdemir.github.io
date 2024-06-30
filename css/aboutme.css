@@ -186,4 +186,61 @@ body{
     font-weight: bold;
 } 
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #B721FF;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #21D4FD;
+}
 
+@media (max-width: 710px){
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #B721FF;
+    
+
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 8px 6px;
+            text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        
+        .active {
+            background-color: #21D4FD;
+        }
+    }
+}   
