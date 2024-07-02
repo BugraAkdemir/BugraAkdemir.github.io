@@ -84,10 +84,34 @@
   }
 }
 
+.language-container select {
+  display: flex;
+     border-radius: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+}
+.language-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding-bottom: 10px;
+}
+
 </style>
 
 </head>
 <body>
+
+  <div class="language-container">
+    <select onchange="window.location.href = this.value;">
+     <option value="">🌐 Choose another language</option>
+     <option value="/turkish/index-tr.html">🇹🇷 Turkish</option>
+     <option value="/">🇬🇧 English</option>
+    </select>
+    </div>
+
 <!-- !PAGE CONTENT! -->
 <div class="w3-content">
 
