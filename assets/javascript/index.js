@@ -3,4 +3,4 @@ function changeTheme() {
     document.documentElement.setAttribute('data-theme', themeVal);
   }
 
-
+document.getElementById("kutu").innerText="Bugra Akdemir";
