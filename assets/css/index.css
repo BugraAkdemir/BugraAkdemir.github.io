@@ -1,0 +1,51 @@
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+
+body, h2{
+    font-family: "Raleway", Arial, sans-serif
+}
+
+.w3-half, h1{
+    text-align: center;
+}
+
+.icon {
+    font-size: 24px; /* İkon boyutu */
+    margin-right: 10px; /* Sağa boşluk */
+    cursor: pointer; /* Tıklanabilir imleç */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* İçeriği yatayda ortalar */
+    align-items: center; /* İçeriği dikeyde ortalar */
+    height: 100vh; /* Ekran yüksekliği kadar genişlik */
+    background-color: #f0f0f0; /* Arka plan rengi */
+  }
+
+&[data-theme="dark"] {
+    --bg-color: #383838;
+    --card-bg-color: #2d2d2d;
+    --color-primary: #f5ecec;
+    --color-secondary: #bfbfbf;
+}
+
+.author {
+    margin-top: 40px;
+    a {
+      color: var(--color-secondary);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 100;
+    }
+  }
+
+.theme-select {
+    margin: 0 0 30px 0;
+    width: 80%;
+    label {
+      color: var(--color-primary);
+    }
+}
+
