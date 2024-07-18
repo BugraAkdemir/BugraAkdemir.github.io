@@ -1,166 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Bugra Akdemir</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="assets/css/index.css">
-<link rel="icon" href="assets/image/logo/mainLogo.png">
-
-<style>
-  body {
-    font-family: "Raleway", sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-  }
-
-  .w3-content {
-    padding: 20px;
-  }
-
-  .header-content {
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-    padding: 64px 16px;
-  }
-
-  .main-content {
-    max-width: 800px;
-    margin-left: auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .main-content img {
-    width: 100%;
-    display: block;
-    margin: auto;
-    border-radius: 80px;
-  }
-
-  .footer-content {
-    text-align: center;
-    padding: 32px;
-  }
-
-  .footer-content a {
-    margin-right: 20px;
-  }
-
-  .w3-half, h1{
-    text-align: center;
-  }
-
-@media screen and (max-width: 768px) {
-  .header-content {
-    padding: 48px 16px;
-  }
-
-  .main-content {
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .header-content {
-    padding: 32px 8px;
-  }
-
-  .main-content {
-    border-radius: 80px;
-    box-shadow: none;
-    padding: 10px;
-  }
-
-  .main-content img {
-    border-radius: 80px;
-  }
-}
-
-.language-container select {
-  display: flex;
-     border-radius: 15px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-}
-.language-container {
- display: flex;
- justify-content: center;
- align-items: center;
- padding-bottom: 10px;
-}
-
-</style>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Bugra Akdemir</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
 </head>
 
-<body>
-  <div class="language-container">
-    <select onchange="window.location.href = this.value;">
-     <option value="">🌐 Choose another language</option>
-     <option value="/turkish/index-tr.html">🇹🇷 Turkish</option>
-     <option value="/">🇬🇧 English</option>
-    </select>
-    </div>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-content">
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Bugra Akdemir</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Portfolio</a>
+                </li>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
 
-<!-- Header -->
-<header class="header-content w3-panel w3-center w3-opacity">
-  <h1 class="w3-xlarge">SoftWare</h1>
-  <h1>Buğra Akdemir</h1>
-  <p>
-    Hello, Welcome, This is My Blog Page Here You Can Find My Projects, Project DEVELOPMENT Processes and Before the Projects Are Uploaded to GitHub
-  </p>
-  <div class="w3-padding-32">
-    <div class="w3-bar w3-border">
-      <a href="/" class="w3-bar-item w3-button">Home</a>
-      <a href="/contatct" class="w3-bar-item w3-button">Contact</a>
-      <a href="/projects" class="w3-bar-item w3-button">Projects</a>
-      <a href="/about-us" class="w3-bar-item w3-button">About Me</a>
-    </div>
-  </div>
-</header>
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I am Bugra Akdemir</span>
+            </h1>
+            <p class="header-subtitle">Web And Mobile Developer </p>
 
-<!-- Main Content -->
-<div class="main-content">
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-half">
-      <h2>Who Are We</h2>
-      <h1>AKDBT</h1>
-      <p>Akdemir SoftWare</p>
-      <img src="assets/image/backraund/i1.jpg" alt="Image 1">
-      <h4>Hello, I am Bugra and I have been a Business Partner in the Software Industry for 2 years.</h4>
-      <img src="assets/image/backraund/i2.jpg" alt="Image 2">
-      <h4>I live in Turkey and I am a high school student. I started my software life in my secondary school years and today I am a computer engineering student.</h4>
-      <img src="assets/image/backraund/i3.jpg" alt="Image 3">
-    </div>
-  </div>
-</div>
+            <button class="btn btn-primary">Visit My Works</button>
+        </div>
+    </header><!-- end of page header -->
 
-<!-- Footer -->
-<footer class="footer-content w3-container w3-padding-64 w3-light-grey w3-center w3-large">
-  <a href="https://www.instagram.com/s1r.bugra" target="_blank">
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-  </a>
-    
-  <a href="https://github.com/BugraAkdemir" target="_blank">
-    <i class="fa fa-github w3-hover-opacity"></i>
-  </a>
-  </footer>
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/man.png" class="about-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>
+                        I am Bugra Software. I started my life in high school. <br>
+                        And I currently have 3 years of experience <br>
+                        I am a Mobile and Web Developer <br>
+                    </p>
+                    <a href="https://github.com/BugraAkdemir">
+                        <button class="btn-rounded btn btn-outline-primary mt-4">GitHub</button>
+                    </a>
+                    
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">Portfolio</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img src="assets/imgs/folio-1.jpg" class="portfolio-card-img"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                    <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Mobile Developer</h5>
+                                    <p class="font-weight-normal">Android Developer</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
 
-</div>
 
-<script src="assets/javascript/index.js"></script>
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <!-- contact form -->
+            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" class="form-control" placeholder="Enter Email" requried>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="comment" id="comment" rows="6" class="form-control"
+                            placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                    </div>
+                </div>
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <p class="mb-0">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; <a
+                    href="#"></a>Tüm Haklar Gizlidir<a
+                    href="#"></a>
+            </p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+
 </body>
+
 </html>
