@@ -1,0 +1,15 @@
+body{
+    text-decoration: none;
+    background: rgb(0,237,175);
+}
+
+.head1{
+    text-align: center;
+    margin-top: 180px;
+    background: rgb(0,255,180);
+    width: 350px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    margin-left: 50;
+}
