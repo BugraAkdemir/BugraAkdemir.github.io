@@ -26,10 +26,26 @@ document.addEventListener("DOMContentLoaded", function() {
     function loadNotes(ip) {
         let notes = JSON.parse(localStorage.getItem(ip)) || [];
         notesList.innerHTML = '';
-        notes.forEach(note => {
+        notes.forEach((note, index) => {
             let li = document.createElement('li');
             li.textContent = note;
+
+            let deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Delete';
+            deleteButton.classList.add('delete-button');
+            deleteButton.addEventListener('click', function() {
+                deleteNote(ip, index);
+                loadNotes(ip);
+            });
+
+            li.appendChild(deleteButton);
             notesList.appendChild(li);
         });
+    }
+
+    function deleteNote(ip, noteIndex) {
+        let notes = JSON.parse(localStorage.getItem(ip)) || [];
+        notes.splice(noteIndex, 1);
+        localStorage.setItem(ip, JSON.stringify(notes));
     }
 });
