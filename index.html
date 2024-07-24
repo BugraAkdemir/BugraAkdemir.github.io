@@ -432,6 +432,14 @@
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
 
+   <script>
+	// localStorage'da kaydedilmiş içerik var mı kontrol et
+	var savedContent = localStorage.getItem('indexContent');
+	if (savedContent) {
+		document.getElementById('index-content').innerText = savedContent;
+	}
+</script>
+
 </body>
 
 </html>
